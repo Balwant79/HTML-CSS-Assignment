@@ -1,0 +1,345 @@
+html {
+    font-size: 10px;
+}
+
+
+body {
+    font-family: 'Roboto Slab', serif;
+ background: url("https://c.pxhere.com/photos/c9/5e/dandelion_seeds_flower_nature_summer_spring_plant_stem-1070886.jpg!d") no-repeat center center fixed; 
+ background-size: 100%;
+ 
+} 
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: inherit;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+:focus {
+    outline-color: #fa0;
+}
+    /* header start */
+    .header {
+        display: flex;
+        flex-basis: 2rem;
+        align-items: center;
+        padding: 0 0.8rem;
+        justify-content: space-between;
+        background:#0c8ecf;
+        color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+        opacity: 0.8;
+        
+
+    }
+
+    .header .btn {
+        background-color: #362c63;
+        border-radius: 0.3rem;
+        transition: background-color 150ms;
+        
+        
+    }
+    
+    .header .btn:hover {
+        background-color: #3385b5;
+    }
+    
+   
+    /* board infor bar  */
+    .boards-btn {
+        flex-basis: 4rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #fff;
+        margin-right: 0.8rem;
+        padding: 0.6rem 0.8rem;
+    }
+    .boards-menu {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .board-search {
+        flex-basis: 18rem;
+        position: relative;
+    }
+    
+    .board-search-input {
+        height: 3rem;
+        border: none;
+        border-radius: 0.3rem;
+        background-color: #c4dceb;
+        width: 100%;
+        padding: 0 3rem 0 1rem;
+        color: #fff;
+    }
+    
+    .board-search-input:hover {
+        background-color:#fff;
+    }
+
+    .tralala {
+        flex: 1;
+        font-family: "Courgette", cursive;
+        font-size: 2.0rem;
+        font-weight: 700;
+        color:white;
+        margin: -16px 2rem;
+        transition: color 150ms;
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+        
+    }
+    
+    .tralala:hover {
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .tralala-icon {
+        padding-right: 0.4rem;
+    }
+
+    .user-settings {
+        display: flex;
+        height: 3rem;
+        color: #fff;
+    }
+    
+    .user-settings-btn {
+        font-size: 1.5rem;
+        width: 3rem;
+        margin-right: 0.8rem;
+    }
+    
+
+    /* header ends  */
+
+    /* Sub-header starts  */
+    .sub-header-bar {  
+        display: flex;
+        flex-basis: 3rem;
+        font-weight:bold;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        margin: 0.8rem 0;
+        padding: 0 2rem;
+        border-radius: .05rem;
+        background-color:#b8860b;
+        opacity: 0.8;
+        border-radius: 0.5rem;
+        color:#191970;
+    
+        
+    }
+
+    .sub-header-controls {
+        display: flex;
+    }
+
+    .board-title h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+    
+    .sub-header .btn {
+        margin-right: 1rem;
+    }
+    
+    .sub-header-controls .btn:last-of-type {
+        margin-right: 0;
+    }
+
+    /* sub-header ends  */
+
+
+
+/* body starts  */
+/* list  */
+.lists-container {
+    display: flex;
+    align-items: start;
+    padding: 0rem -0.2rem 0.8rem;
+    overflow-x: auto;
+    height: calc(100vh - 8.6rem);
+}
+
+.list {
+    flex: 0 0 27rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(166, 224, 243);
+    max-height: calc(100vh - 11.8rem);
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.list:last-of-type {
+    margin-right: 0;
+}
+
+.list-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    padding: 1rem;
+    padding: -0.5rem 0.2rem 0rem 0.5rem;
+    
+}
+.list-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    padding: 0 0.6rem 0.5rem;
+    overflow-y: auto;
+}
+
+.list-items li {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.3;
+    background-color: #fff;
+    padding: 0.65rem 0.6rem;
+    color: #4d4d4d;
+    border-bottom: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 0.6rem;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+.list-items li:last-of-type {
+    margin-bottom: 0;
+}
+
+.list-items li:hover {
+    background-color: #eee;
+}
+/* cards */
+.addtocard {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #838c91;
+    padding: 1rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+.addtocard:hover {
+    background-color: #cdd2d4;
+    color: #4d4d4d;
+    text-decoration: underline;
+}
+
+.addtocard {
+    display:block;
+    font-size: 14px;
+    font-weight:bold;
+    color: #838c91;
+    padding: 6px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.addtocard {
+    display:block;
+    font-size: 14px;
+    font-weight:bold;
+    color: #838c91;
+    padding: 6px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.add-card-btn{
+    display: block;
+    background-color: royalblue;
+    border: 2px solid rgb(248, 93, 54);
+    color: rgb(247, 236, 82);
+    font-weight: bold;
+    border: 2px solid goldenrod;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    padding: 5px 12px;
+    margin: 0px 162px 1px 13px;  
+}
+
+.close{
+
+    font-weight: bold;
+    
+    font-size: 1.6rem;
+    
+    margin: -3rem 1.02rem 3rem 11rem;
+    }
+    .add-card-btn:hover {
+        background-color:#3d4849;
+    }
+    
+    
+    .add-list-btn:hover {
+        background-color: #005485;
+    }
+    
+    
+    .addtocard::after,
+    .add-list-btn::after {
+        content: '...';
+    }
+/* cards ends  */
+
+/* icons starts */
+#fas-fa-ellipsis-h{
+    font-weight: bold;
+    font-size: 16px;
+    margin: 4px 0px -36px 231px;
+}
+
+#fa-pencil-1{
+margin-left: 135px;
+font-size: 20px;
+}
+
+#fa-pencil-2{
+    margin-left: 155px;
+    font-size: 20px;
+}
+
+#fa-pencil-3{
+    margin-left: 110px;
+    font-size: 20px;
+}
+
+#fa-pencil-4{
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+#fa-pencil-1:hover{
+   color: crimson;
+   background-color: goldenrod;
+}
+#fa-pencil-2:hover{
+    color: crimson;
+    background-color: goldenrod;
+ }
+ #fa-pencil-3:hover{
+    color: crimson;
+    background-color: goldenrod;
+ }
+ #fa-pencil-4:hover{
+    color: crimson;
+    background-color: goldenrod;
+ }
+ /* icon ends */
